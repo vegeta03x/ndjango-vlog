@@ -1,0 +1,10 @@
+{% extends "vlog/base.html" %}
+{% block content %}
+				<div class="post">
+					<h3><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
+					{% if post.published_date %}
+						<p class="date">Published: {{ post.published_date }}</p>
+					{% endif %}
+					<p>{{ post.text|linebreaks }}</p>
+				</div>
+{% endblock %}
