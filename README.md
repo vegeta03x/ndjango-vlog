@@ -1,2 +1,2 @@
 # ndjango-vlog
-nothing but a blog, built with django
+Ohh , its just a Vlog - made with ndjango
